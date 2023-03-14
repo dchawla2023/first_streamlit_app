@@ -44,7 +44,7 @@ try:
 except URLError as e:
  streamlit.error(e)
 
-streamlit.header("View out Fruit list, Add your Favourite!")
+streamlit.header("View Our Fruit List, Add Your Favourite!")
 def get_fruit_load_list():
  with my_cnx.cursor() as my_cur:
   my_cur.execute("select * from pc_rivery_db.public.fruit_load_list")
